@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<!-- === Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- ===== Link Swiper's CSS ===== -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <!-- ===== Fontawesome CDN Link ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Devesh Takoor - Projects</title>
+  </head>
+  <style type="text/css">
+    /* === Google Font Import - Poppins === */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    }
+    body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    }
+    section{
+    position: relative;  
+    height: 450px;
+    width: 1075px;
+    display: flex;
+    align-items: center;
+    }
+    .swiper{
+    width: 950px;
+    }
+    .card{
+    position: relative;
+    background: grey;
+    border-radius: 20px;
+    margin: 20px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+    .card::before{
+    content: "";
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    }
+    .card .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    z-index: 100;
+    }
+    section .card .image{
+    height: 250px;
+    width: 250px;
+    border-radius: 0%;
+    padding: 3px;
+    background: black;
+    }
+    section .card .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0%;
+    border: 3px solid black;
+    }
+    .card .media-icons{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    .card .media-icons i{
+    color: #fff;
+    opacity: 0.6;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    }
+    .card .media-icons i:hover{
+    opacity: 1;
+    }
+    .card .name-profession{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    color: ;
+    } 
+    .name-profession .name{
+    font-size: 20px;
+    font-weight: 600;
+    }
+    .name-profession .profession{
+    font-size:15px;
+    font-weight: 500;
+    }
+    .card .button{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    }
+    .card .button button{
+    background: black;
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 8px 22px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    }
+    .button button:hover{
+    background: #6616d0;
+    }
+    .swiper-pagination{
+    position: absolute;
+    }
+    .swiper-pagination-bullet{
+    height: 7px;
+    width: 26px;
+    border-radius: 25px;
+    background: #7d2ae8;
+    }
+    .swiper-button-next, .swiper-button-prev{
+    opacity: 0.7;
+    color: yellow;
+    transition: all 0.3s ease;
+    }
+    .swiper-button-next:hover, .swiper-button-prev:hover{
+    opacity: 1;
+    color: grey;
+    }
+    .tooltip {
+    position: relative;
+    opacity: 0;
+    padding: 10px;
+    background: yellow;
+    color: black;
+    font-size: 16px;
+    border-radius: 5px;
+    -webkit-transition:all 0.2s ease-in;
+    -moz-transition:all 0.2s ease-in;
+    transition:all 0.2s ease-in;
+    }
+    a.show:hover + span.tooltip {
+    opacity:1;
+    }
+    .box{
+    margin-top: 12%;
+    margin-bottom: auto;
+    width: 37vmin;
+    position: relative;   
+    overflow: hidden;
+    }
+    .wrap{
+    width: 100%;
+    display: flex;
+    animation: slide 16s infinite;
+    }
+    img{
+    width: 100%;
+    }
+    @keyframes slide{
+    0%{
+    transform: translateX(0);
+    }
+    25%{
+    transform: translateX(0);
+    }
+    30%{
+    transform: translateX(-100%);
+    }
+    50%{
+    transform: translateX(-100%);
+    }
+    55%{
+    transform: translateX(-200%);
+    }
+    75%{
+    transform: translateX(-200%);
+    }
+    80%{
+    transform: translateX(-300%);
+    }
+    100%{
+    transform: translateX(-300%);
+    }
+    }
+  </style>
+  <body>
+    <center>
+      <table style="width:100%;">
+        <tr>
+          <th>
+            <br><br><br><br><br><br><br>
+            <h1 style="color:yellow;">PROJECTS</h1>
+            <br>
+            <h3 style="color:cyan; margin:5%; float:left;">Arduino</h3>
+          </th>
+        </tr>
+        <br>
+        <br>
+        <tr>
+          <th>
+            <section>
+              <div class="swiper mySwiper container">
+                <div class="swiper-wrapper content">
+                  <div class="swiper-slide card">
+                    <div class="card-content">
+                      <div class="image">
+                        <div class="box">
+                          <div class="wrap">
+                            <img src="iCCo1.jpg">
+                            <img src="iCCO3.jpg">
+                            <img src="iCCo1.jpg">
+                            <img src="iCCO3.jpg">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="name-profession">
+                        <span class="name">eSPR(Electronic Student Planno Reminder)</span>
+                        <span class="profession">Allows Student to have a better planning for school </span>
+                        <br>
+                        <center>
+                          <div class="wrapper">
+                            <a href="#" class="show"><button>More Details</button></a>
+                            <span class="tooltip">Hello ! This is tooltip....</span>
+                          </div>
+                        </center>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide card">
+                    <div class="card-content">
+                      <div class="image">
+                        <div class="box">
+                          <div class="wrap">
+                            <img src="https://i.pinimg.com/originals/2b/de/de/2bdede0647e3cdf75b44ea33723201d9.jpg">
+                            <img src="https://images6.alphacoders.com/462/thumb-1920-462371.jpg">
+                            <img src="https://images5.alphacoders.com/343/thumb-1920-343645.jpg">
+                            <img src="https://cdn.wallpapersafari.com/24/98/dwMtqD.jpg">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="name-profession">
+                        <span class="name">E-Dispenser</span>
+                        <span class="profession">Have the ability to discard any liquid.</span>
+                        <br>
+                        <center>
+                          <div class="wrapper">
+                            <a href="#" class="show"><button>More Details</button></a>
+                            <span class="tooltip">Hello ! This is tooltip....</span>
+                          </div>
+                        </center>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide card">
+                    <div class="card-content">
+                      <div class="image">
+                        <div class="box">
+                          <div class="wrap">
+                            <img src="https://i.pinimg.com/originals/2b/de/de/2bdede0647e3cdf75b44ea33723201d9.jpg">
+                            <img src="https://images6.alphacoders.com/462/thumb-1920-462371.jpg">
+                            <img src="https://images5.alphacoders.com/343/thumb-1920-343645.jpg">
+                            <img src="https://cdn.wallpapersafari.com/24/98/dwMtqD.jpg">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="name-profession">
+                        <span class="name">iCCo(Intelligent Cap Collector)</span>
+                        <span class="profession">Collects Small caps of bottle as it is often an unremarkable waste.</span>
+                        <br>
+                        <center>
+                          <div class="wrapper">
+                            <a href="#" class="show"><button>More Details</button></a>
+                            <span class="tooltip">Hello ! This is tooltip....</span>
+                          </div>
+                        </center>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide card">
+                    <div class="card-content">
+                      <div class="image">
+                        <div class="box">
+                          <div class="wrap">
+                            <img src="https://i.pinimg.com/originals/2b/de/de/2bdede0647e3cdf75b44ea33723201d9.jpg">
+                            <img src="https://images6.alphacoders.com/462/thumb-1920-462371.jpg">
+                            <img src="https://images5.alphacoders.com/343/thumb-1920-343645.jpg">
+                            <img src="https://cdn.wallpapersafari.com/24/98/dwMtqD.jpg">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="name-profession">
+                        <span class="name">Smart Room</span>
+                        <span class="profession">Controls the room electrical circuit according to the environment.</span>
+                        <br>
+                        <center>
+                          <div class="wrapper">
+                            <a href="#" class="show"><button>More Details</button></a>
+                            <span class="tooltip">Hello ! This is tooltip....</span>
+                          </div>
+                        </center>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide card">
+                    <div class="card-content">
+                      <div class="image">
+                        <div class="box">
+                          <div class="wrap">
+                            <img src="https://i.pinimg.com/originals/2b/de/de/2bdede0647e3cdf75b44ea33723201d9.jpg">
+                            <img src="https://images6.alphacoders.com/462/thumb-1920-462371.jpg">
+                            <img src="https://images5.alphacoders.com/343/thumb-1920-343645.jpg">
+                            <img src="https://cdn.wallpapersafari.com/24/98/dwMtqD.jpg">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="name-profession">
+                        <span class="name">Traffic Lights Control</span>
+                        <span class="profession">A better version of the Traffic light system for Mauritius</span>
+                        <br>
+                        <center>
+                          <div class="wrapper">
+                            <a href="#" class="show"><button>More Details</button></a>
+                            <span class="tooltip">Hello ! This is tooltip....</span>
+                          </div>
+                        </center>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide card">
+                    <div class="card-content">
+                      <div class="image">
+                        <div class="box">
+                          <div class="wrap">
+                            <img src="https://i.pinimg.com/originals/2b/de/de/2bdede0647e3cdf75b44ea33723201d9.jpg">
+                            <img src="https://images6.alphacoders.com/462/thumb-1920-462371.jpg">
+                            <img src="https://images5.alphacoders.com/343/thumb-1920-343645.jpg">
+                            <img src="https://cdn.wallpapersafari.com/24/98/dwMtqD.jpg">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="name-profession">
+                        <span class="name">Haptics Model</span>
+                        <span class="profession">Introduction to Arduino.</span>
+                        <br>
+                        <center>
+                          <div class="wrapper">
+                            <a href="#" class="show"><button>More Details</button></a>
+                            <span class="tooltip">Hello ! This is tooltip....</span>
+                          </div>
+                        </center>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </section>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <h3 style="color:cyan; margin:5%; float:left;">First GLobal Challenge</h3>
+          </th>
+        </tr>
+      </table>
+    </center>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
