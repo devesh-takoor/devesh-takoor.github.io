@@ -28,7 +28,25 @@
     display: inline-block;
     border-bottom: 1px dotted black;
     }
-    .tooltip .tooltiptext {
+    .tooltip .tooltiptext1 {
+    visibility: hidden;
+    width: 400px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -100px;
+    }
+    .tooltip:hover .tooltiptext1 {
+    visibility: visible;
+    }
+    .tooltip .tooltiptext2 {
     visibility: hidden;
     width: 400px;
     background-color: black;
@@ -43,7 +61,25 @@
     left: 50%;
     margin-left: -200px;
     }
-    .tooltip:hover .tooltiptext {
+    .tooltip:hover .tooltiptext2 {
+    visibility: visible;
+    }
+    .tooltip .tooltiptext3 {
+    visibility: hidden;
+    width: 400px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -300px;
+    }
+    .tooltip:hover .tooltiptext3 {
     visibility: visible;
     }
   </style>
@@ -112,17 +148,17 @@
           <tr style="text-align:center;">
             <th>
               <div class="tooltip">Project Description
-                <span class="tooltiptext" style="padding:20px;">The project is a Dashboard based Website where it will collect and display Real-Time environmental data. The idea is to display those data live on the website and then will use these data to do some useful tasks for example to check for temperature and then have the option if you want to turn on your AC at home and many more other tasks can be done.</span>
+                <span class="tooltiptext1" style="padding:20px;">The project is a Dashboard based Website where it will collect and display Real-Time environmental data. The idea is to display those data live on the website and then will use these data to do some useful tasks for example to check for temperature and then have the option if you want to turn on your AC at home and many more other tasks can be done.</span>
               </div>
             </th>
             <th>
               <div class="tooltip">Project Description
-                <span class="tooltiptext" style="padding:20px;">This website does not own anything, it just creates a connection between people who want to trade things & maximise their return on investment while buying assets. There is no after sale service, the website is only a display window. The idea is to make items which are expensive in Mauritius available to more people (e.g. renting a lawn mower or a sander) </span>
+                <span class="tooltiptext2" style="padding:20px;">This website does not own anything, it just creates a connection between people who want to trade things & maximise their return on investment while buying assets. There is no after sale service, the website is only a display window. The idea is to make items which are expensive in Mauritius available to more people (e.g. renting a lawn mower or a sander) </span>
               </div>
             </th>
             <th>
               <div class="tooltip">Project Description
-                <span class="tooltiptext" style="padding:20px;">The website is a wedding Planner where you can have all the services neccesary for your wedding, we also provide services for any culture for Mauritian People. You can have a wonderful wedding planning with StarDust.</span>
+                <span class="tooltiptext3" style="padding:20px;">The website is a wedding Planner where you can have all the services neccesary for your wedding, we also provide services for any culture for Mauritian People. You can have a wonderful wedding planning with StarDust.</span>
               </div>
               <br>
             </th>
